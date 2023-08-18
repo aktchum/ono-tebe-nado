@@ -15,7 +15,7 @@ body {
   display: block;
   /* размеры логотипа подгонял с pixel perfect */
   width: 136px;
-  height: 108px;  
+  height: 108px;
 }
 
 .header__nav {
@@ -38,7 +38,7 @@ body {
   text-decoration: none;
 }
 
-.header__menu :first-child .header__links-list-item{
+.header__menu :first-child .header__links-list-item {
   border-bottom: none;
 }
 
@@ -141,7 +141,7 @@ body {
   height: 52px;
   margin-left: 75px;
   border: 1px solid #FFF;
-  vertical-align: top; 
+  vertical-align: top;
   color: #FFF;
   font-size: 22px;
   text-align: center;
@@ -245,18 +245,15 @@ padding: 182px 50px 0px;
   height: 240px;
   border-radius: 50%;
   background-color: #000;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: center;
 }
 
 .about__logo-image {
   width: 148px;
   height: 114px;
   margin: auto;
-}
-
-.about__logo {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  justify-self: center;
 }
 
 .about__title {
@@ -321,7 +318,6 @@ padding: 182px 50px 0px;
   justify-content: space-between;
   width: 240px;
   height: 47px;
-  list-style: none;
   list-style: none;
 }
 
