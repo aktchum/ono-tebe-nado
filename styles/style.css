@@ -48,7 +48,6 @@ body {
   font-size: 18px;
   /* light-height: 24.3px с макета*/
   line-height: calc(24.3/18);
-  
 }
 
 
@@ -232,11 +231,11 @@ body {
 
 
 .about__column {
-display: grid;
-grid-template-columns: 430px 1fr;
-grid-template-rows: repeat(3, auto);
-column-gap: 25px;
-padding: 182px 50px 0px;
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 25px;
+  padding: 182px 50px 0px;
 }
 
 .about__logo {
