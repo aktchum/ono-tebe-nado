@@ -112,12 +112,12 @@
 .cover__description {
   position: relative;
   z-index: 2;
-  padding: 0px 50px 50px 422px;
+  padding: 0px 0 50px 422px;
 }
 
 .cover__description-text {
   display: inline-block;
-  padding: 10px 72px 0px 0px;
+  padding-top: 10px;
   vertical-align: middle;
   color: #FFF;
   font-weight: 400;
@@ -132,6 +132,7 @@
 .bet-button {
   width: 257px;
   height: 52px;
+  margin-left: 72px;
   border: 1px solid #FFF;
   vertical-align: top;
   color: #FFF;
