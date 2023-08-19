@@ -1,14 +1,9 @@
-body {
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-}
-
 .header {
   display: grid;
   grid-template-columns:repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  padding: 92px 50px;
+  padding: 92px 50px 94px;
 }
 
 .header__logo-link {
@@ -18,38 +13,38 @@ body {
   height: 108px;
 }
 
-.header__nav {
+.header__menu {
   justify-self: start;
 }
 
-.header__menu {
+.header__links-list {
   display: flex;
   gap: 32px;
   font-size: 18px;
   list-style-type: circle;
 }
 
-.header__menu :first-child {
+.header__links-list :first-child {
   list-style-type: none;
 }
 
-.header__links-list-item {
+.header__link {
   border-bottom: 1px solid black;
   text-decoration: none;
 }
 
-.header__menu :first-child .header__links-list-item {
+.header__links-list :first-child .header__link {
   border-bottom: none;
 }
 
 .address {
   justify-self: end;
-  width: 240px;
+  max-width: 240px;
   font-size: 18px;
+  font-style: normal;
   /* light-height: 24.3px с макета*/
   line-height: calc(24.3/18);
 }
-
 
 .address .address__tel {
   border-bottom: 1px solid black;
@@ -65,7 +60,6 @@ body {
 
 .cover {
   position: relative;
-  height: 757px;
   background: url(../images/cover.jpg) center center/cover no-repeat;
 }
 
@@ -118,12 +112,12 @@ body {
 .cover__description {
   position: relative;
   z-index: 2;
-  padding-left: 422px;
+  padding: 0px 50px 50px 422px;
 }
 
 .cover__description-text {
   display: inline-block;
-  padding-top: 10px;
+  padding: 10px 72px 0px 0px;
   vertical-align: middle;
   color: #FFF;
   font-weight: 400;
@@ -138,7 +132,6 @@ body {
 .bet-button {
   width: 257px;
   height: 52px;
-  margin-left: 75px;
   border: 1px solid #FFF;
   vertical-align: top;
   color: #FFF;
@@ -180,7 +173,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 430px;
+  max-width: 430px;
   height: 100%;
   min-height: 450px;
 }
@@ -240,13 +233,13 @@ body {
 
 .about__logo {
   display: flex;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background-color: #000;
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  justify-self: center;
 }
 
 .about__logo-image {
@@ -268,7 +261,7 @@ body {
 .about__text-first {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  padding-top: 8px;
+  padding-top: 6px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
